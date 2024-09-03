@@ -1,4 +1,6 @@
-export const investments = {
+import { Investments } from "../interfaces";
+
+export const investments: Investments = {
   renda_fixa: {
     cdb: [
       {
