@@ -1,0 +1,15 @@
+.tag-wrapper {
+  padding-block: 4px;
+  padding-inline: 8px;
+  border-radius: 4px;
+  width: max-content;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
