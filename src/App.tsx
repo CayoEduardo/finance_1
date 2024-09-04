@@ -9,7 +9,13 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <Container>
-      <div style={{ display: "flex", gap: "48px", marginTop: "48px" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "48px",
+          width: "100%",
+        }}
+      >
         <Sidebar />
         <Main />
       </div>

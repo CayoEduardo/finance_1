@@ -28,13 +28,13 @@ const Indicators = ({
         <Text style={{ width: "100%", fontSize: "26px" }}>
           Total: {renda_fixa_total}
         </Text>
-        <Graph
+        {/* <Graph
           values={[
             Number(reducedValue_cdb),
             Number(reducedValue_lci),
             Number(reducedValue_t_direto),
           ]}
-        />
+        /> */}
       </IndicatorCard>
       <IndicatorCard>
         <Text style={{ width: "100%", fontSize: "20px" }}>Renda variável</Text>

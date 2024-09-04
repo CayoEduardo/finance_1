@@ -6,7 +6,7 @@ import Text from "./Text/Text";
 const Sidebar = () => {
   const { filteredInvestments, setFilteredInvestments } = useFinance();
   return (
-    <aside style={{ width: "260px" }}>
+    <aside style={{ width: "260px", flexShrink: 0 }}>
       <Text style={{ fontSize: "24px" }}>Investimentos</Text>
 
       <Text style={{ marginTop: "16px", fontSize: "18px" }}>Renda fixa</Text>

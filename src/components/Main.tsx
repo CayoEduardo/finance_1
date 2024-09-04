@@ -10,6 +10,7 @@ import Indicators from "./Indicators";
 import { investments } from "../mocks/investments";
 import { useFinance } from "../hooks/useFinance";
 import { DOLAR } from "../constants";
+import Graph2 from "./Graph2";
 
 const Main = () => {
   const { crypto, exterior, renda_fixa, renda_variavel } = investments;
@@ -50,7 +51,7 @@ const Main = () => {
   );
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%", overflow: "auto" }}>
       <Indexes />
       <Indicators
         {...{
@@ -63,7 +64,21 @@ const Main = () => {
           total,
         }}
       />
-      <Table
+      <div
+        style={{
+          display: "flex",
+          gap: "16px",
+          marginTop: "48px",
+        }}
+      >
+        <div style={{ display: "flex", flex: 5 }}>
+          <Graph2 />
+        </div>
+        <div style={{ display: "flex", backgroundColor: "pink", flex: 2 }}>
+          asd
+        </div>
+      </div>
+      {/* <Table
         columns={[
           { field: "nome" },
           { field: "prazo" },
@@ -83,7 +98,7 @@ const Main = () => {
           { field: "instituicao" },
         ]}
         data={rendaFixa}
-      />
+      /> */}
     </div>
   );
 };
